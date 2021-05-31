@@ -16,7 +16,7 @@ let private areas = dict [
                 License = license
                 OriginLocation = Option.None
                 DownloadedFrom = "https://open.toronto.ca/dataset/neighbourhoods/"
-                LocalPath = """OpenData/toronto/zones/Neighbourhoods.geojson"""
+                LocalPath = """../src/Cities/OpenData/toronto/zones/Neighbourhoods.geojson"""
             }
         }
     Wards,
@@ -27,7 +27,7 @@ let private areas = dict [
                 License = license
                 OriginLocation = Option.None
                 DownloadedFrom = "https://open.toronto.ca/dataset/city-wards/"
-                LocalPath = """OpenData/toronto/zones/47-ward-model-wgs84-latitude-longitude/citygcs.ward_2018_wgs84.geojson"""
+                LocalPath = """../src/Cities/OpenData/toronto/zones/47-ward-model-wgs84-latitude-longitude/citygcs.ward_2018_wgs84.geojson"""
             }
         }
     // Toronto has couple of Wards profiles
@@ -39,7 +39,7 @@ let private areas = dict [
     //             License = license
     //             OriginLocation = None
     //             DownloadedFrom = "https://open.toronto.ca/dataset/city-wards/"
-    //             LocalPath = """OpenData/toronto/zones/25-ward-model-december-2018-wgs84-latitude-longitude/data.geojson"""
+    //             LocalPath = """../src/Cities/OpenData/toronto/zones/25-ward-model-december-2018-wgs84-latitude-longitude/data.geojson"""
     //         }
     //     }
 ]
@@ -47,7 +47,7 @@ let private addresses=
     {
         OriginLocation = Some "https://open.toronto.ca/dataset/address-points-municipal-toronto-one-address-repository/"
         DownloadedFrom = "https://batch.openaddresses.io/"
-        LocalPath = """OpenData/toronto/addresses.geojson"""
+        LocalPath = """../src/Cities/OpenData/toronto/addresses.geojson"""
         License = license
     } 
 

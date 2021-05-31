@@ -13,16 +13,9 @@ let private mappings =
 
 let license = 
     {
-        Name = "The Open Data Commons – Public Domain Dedication and Licence"
-        Link = "http://www.opendatacommons.org/licenses/pddl/1.0/"
-        MinimalAttributionInfo = Option.None
-    }
-
-let addressingLicense = 
-    {
-        Name = "Open Data Commons Public Domain Dedication and License"
-        Link = "https://www.opendatacommons.org/licenses/pddl/1-0/index.html"
-        MinimalAttributionInfo = Some "City and County of San Francisco, Enterprise Addressing System"
+        Name = "Creative Commons BY-3.0 license"
+        Link = "https://creativecommons.org/licenses/by-nc-sa/2.5/it/deed.it"
+        MinimalAttributionInfo = None
     }
 
 let private areas = dict [
@@ -32,9 +25,9 @@ let private areas = dict [
             Data = 
             {
                 License = license
-                OriginLocation = Option.None
-                DownloadedFrom = "https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h"
-                LocalPath = """Cities/OpenData/firenze/sez_censimento2011Polygon.geojson"""
+                OriginLocation = None
+                DownloadedFrom = "https://opendata.comune.fi.it/"
+                LocalPath = """../src/Cities/OpenData/firenze/sez_censimento2011Polygon.geojson"""
             }
         }
     Wards,
@@ -43,9 +36,9 @@ let private areas = dict [
             Data = 
             {
                 License = license
-                OriginLocation = Option.None
-                DownloadedFrom = "https://data.sfgov.org/Geographic-Locations-and-Boundaries/Parcels-with-overlay-attributes/9grn-xjpx"
-                LocalPath = """Cities/OpenData/firenze/rioniPolygon.geojson"""
+                OriginLocation = None
+                DownloadedFrom = "https://opendata.comune.fi.it/"
+                LocalPath = """../src/Cities/OpenData/firenze/rioniPolygon.geojson"""
             }
         }
     Districts,
@@ -54,18 +47,18 @@ let private areas = dict [
             Data = 
             {
                 License = license
-                OriginLocation = Option.None
-                DownloadedFrom = "https://data.sfgov.org/Geographic-Locations-and-Boundaries/Parcels-with-overlay-attributes/9grn-xjpx"
-                LocalPath = """Cities/OpenData/firenze/vecchi_quartieriPolygon.geojson"""
+                OriginLocation = None
+                DownloadedFrom = "https://opendata.comune.fi.it/"
+                LocalPath = """../src/Cities/OpenData/firenze/vecchi_quartieriPolygon.geojson"""
             }
         }
 ]
 let private addresses= 
     {
-        OriginLocation = Some "https://data.sfgov.org/api/geospatial/ramy-di5m?method=export&format=Shapefile"
+        OriginLocation = None
         DownloadedFrom = "https://batch.openaddresses.io/"
-        LocalPath = """Cities/OpenData/firenze/addresses.geojson"""
-        License = addressingLicense
+        LocalPath = """../src/Cities/OpenData/firenze/addresses.geojson"""
+        License = license
     } 
 
 let data: Settings =
